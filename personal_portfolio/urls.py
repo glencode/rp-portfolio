@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import path, include
+#from django.personal_portfolio.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', include('hello_world.urls')),
     #path(''),
-    path('projects/', include('projects.urls')),
+    path('', include('projects.urls')),
+    #path("", views.project_index, name="project_index"),
 ]
